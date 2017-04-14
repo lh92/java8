@@ -41,7 +41,13 @@ public class t1 {
         Student s5 = new Student("zhangsan", 44, 44);
         List<Student> students = Arrays.asList(s1, s2, s3, s4, s5);
         //按照姓名分组
-        Map<String, List<Student>> listMap = students.stream().collect(Collectors.groupingBy(Student::getName));
-        System.out.println(listMap);
+//        Map<String, List<Student>> listMap = students.stream().collect(Collectors.groupingBy(Student::getName));
+//        System.out.println(listMap);
+        //按照分数分组
+        Map<Integer, List<Student>> collect = students.stream().collect(Collectors.groupingBy(Student::getScore));
+
+
+
+
     }
 }
