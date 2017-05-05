@@ -1,7 +1,6 @@
 package com.example.day1
 
 
-
 /**
  *
  *
@@ -9,5 +8,4 @@ package com.example.day1
  */
 
 interface Gihub{
-//    fun getStart(): Call<List<User>>
 }
